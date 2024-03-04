@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Fan Book</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <style>
+      * {
+        font-family: "Poppins", sans-serif;
+      }
+      body {
+        background-color: #3f3e3c;
+      }
+      .banner {
+        width: 100%;
+        height: 300px;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(https://images.ctfassets.net/w65k7w0nsb8q/5Iiog4J9lyoeSilMCqtHoA/71159f3f617434601202ed61d56c99ec/DSC_2187.jpg);
+        background-position: center;
+        background-size: cover;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        color: white;
+        text-shadow: 0 2px 2px black;
+      }
+      .form {
+        background-color: white;
+        width: 95%;
+        max-width: 500px;
+        margin: 20px auto 20px auto;
+        padding: 20px;
+        box-shadow: 0 0 5px 0 black;
+        border-radius: 10px;
+      }
+      .form > .btn {
+        margin-top: 15px;
+      }
+      .comment {
+        width: 95%;
+        max-width: 500px;
+        margin: 20px auto 20px auto;
+      }
+      .comment > .card-body {
+        background-color: white;
+        padding: 20px;
+        margin-bottom: 15px;
+        box-shadow: 0 0 5px 0 black;
+        border-radius: 10px;
+      }
+      .comment > .top-message {
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Banner -->
+    <div class="banner">
+      <h1 class="judul-banner">Fan Book</h1>
+      <p class="sub-judul-banner">Laufey's Fan Book</p>
+    </div>
+    <!-- Form -->
+    <div class="form">
+      <div class="form-floating mb-3">
+        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" />
+        <label for="floatingInput">Username</label>
+      </div>
+      <div class="form-floating">
+        <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+        <label for="floatingTextarea">Message</label>
+      </div>
+      <button type="button" class="btn btn-dark">Send</button>
+    </div>
+    <!-- Comment -->
+    <div class="comment">
+      <h3 class="top-message text-center pb-3">Top Fans Message</h3>
+      <div class="card-body">
+        <blockquote class="blockquote mb-0">
+          <p>Laufey benar-benar menghipnotis dengan musiknya! Suaranya yang memesona dan lagu-lagunya yang mendalam sungguh membuat hati tersentuh</p>
+          <footer class="blockquote-footer">Andrey</footer>
+        </blockquote>
+      </div>
+      <div class="card-body">
+        <blockquote class="blockquote mb-0">
+          <p>Saya terpesona dengan keahlian Laufey dalam bermusik. Setiap nada dan lirik yang dia hasilkan begitu menyentuh, membuat saya ingin terus mendengarkan</p>
+          <footer class="blockquote-footer">Lucy</footer>
+        </blockquote>
+      </div>
+      <div class="card-body">
+        <blockquote class="blockquote mb-0">
+          <p>Laufey adalah perpaduan sempurna antara bakat musikal dan kejujuran emosi. Karya-karyanya sungguh memukau dan memikat hati siapa pun yang mendengarnya</p>
+          <footer class="blockquote-footer">Anna</footer>
+        </blockquote>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
